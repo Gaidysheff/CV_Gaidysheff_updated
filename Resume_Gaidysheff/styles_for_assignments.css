@@ -1,0 +1,208 @@
+footer {
+  background-color: #f59500;
+}
+
+/* _____________Assignment Table________________________ */
+
+.text_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: stretch; */
+}
+
+.shadow {
+  background: #f7f7f7;
+  /* Цвет фона */
+  border: 1px solid #ccc;
+  /* Параметры рамки */
+  padding: 20px;
+  /* Поля вокруг текста */
+  position: relative;
+  /* Относительное позиционирование */
+}
+
+.shadow::before,
+.shadow::after {
+  content: "";
+  /* Вывод тени */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  bottom: 15px;
+  /* Положение снизу */
+  left: 10px;
+  /* Положение слева */
+  width: 50%;
+  /* Ширина тени */
+  max-width: 300px;
+  /* Максимальная ширина тени */
+  height: 15px;
+  /* Высота тени */
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+  /* Тень */
+  transform: rotate(-3deg);
+  /* Поворот */
+  z-index: -1;
+  /* Опускаем ниже блока */
+}
+
+.shadow::after {
+  transform: rotate(3deg);
+  /* Поворот */
+  right: 10px;
+  /* Положение справа */
+  left: auto;
+  /* Восстанавливаем положение слева */
+}
+
+.sub-box {
+  /* flex: 1 40px; */
+  margin: 0px 5px 5px 5px;
+  /* background-color: rgb(247, 249, 131); */
+  align-self: flex-start;
+  text-align: left;
+  font-size: 14px;
+}
+
+.sub-box:nth-of-type(1),
+.sub-box:nth-of-type(2) {
+  flex: 1 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.sub-box:nth-of-type(3) {
+  flex: 3 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sub-box:nth-of-type(4) {
+  flex: 2 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-box:nth-of-type(5) {
+  flex: 5 40px;
+}
+
+.table_head {
+  font-weight: 600;
+  align-self: center;
+  text-align: center;
+  font-family: "Solway";
+  font-size: 16px;
+}
+
+.sub-box:nth-of-type(2) .text_in_duties {
+  align-self: center;
+}
+
+.sub-box .flag_company,
+.flag_location {
+  flex: 1;
+  width: 30px;
+  align-self: flex-start;
+}
+
+.sub-box:nth-of-type(3) .company_in_duties {
+  flex: 5;
+  align-self: flex-start;
+  margin: 10px 0 0 10px;
+}
+
+.sub-box:nth-of-type(3) .company_in_two_lines {
+  flex: 5;
+  align-self: flex-start;
+  margin: 0 0 0 10px;
+}
+
+.sub-box:nth-of-type(3) .company_in_three_lines {
+  flex: 5;
+  align-self: flex-start;
+  margin: -8px 0 0 10px;
+}
+
+.make_bold {
+  font-weight: 800;
+  text-decoration: wavy underline;
+}
+
+/* ________________________Collapsible Content_____________________________________ */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsible_ol {
+  margin-left: -30px;
+}
+
+.collapsible_ol li {
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------------- */
+
+.mini_table {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  row-gap: 10px;
+}
+
+/* ---------Button for Short-Term Assignments------------------ */
+
+.for_button {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.for_button:first-child {
+  margin: 50px;
+}
+
+a.button_ST-Assignments {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #fdbe33 #000 #d77206;
+  border-radius: 6px;
+  background: linear-gradient(#f3ae0f, #e38916) #e38916;
+  transition: 0.2s;
+}
+a.button_ST-Assignments:hover {
+  background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+a.button_ST-Assignments:active {
+  background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
