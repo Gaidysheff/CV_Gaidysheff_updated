@@ -1,0 +1,17 @@
+
+.gallery  {
+    --s: 280px; /* control the size */
+  
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    padding: calc(var(--s) / 20); /* we will see the utility of this later */
+    border-radius: 50%;
+  }
+  .gallery > img {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
