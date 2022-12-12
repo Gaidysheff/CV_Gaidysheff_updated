@@ -206,3 +206,27 @@ a.button_ST-Assignments:hover {
 a.button_ST-Assignments:active {
   background: linear-gradient(#f59500, #f5ae00) #f59500;
 }
+
+/* -------------------- for Short-Term Assignments ----------------*/
+
+.mini_table2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+}
+
+.document {
+  border: 1px solid brown;
+}
+
+.simply_bold {
+  font-weight: 600;
+}
+
+.grids_2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 10px;
+}
