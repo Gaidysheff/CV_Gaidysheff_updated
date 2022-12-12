@@ -8,16 +8,20 @@
 html {
   font-family: sans-serif;
 }
+
 body {
   max-width: 960px;
   width: 90%;
   margin: 20px auto;
 }
+
 header {
   background: rgb(255, 48, 48);
   margin: 0 0 0 10px;
   height: 80px;
 }
+
+
 
 /* ___________HEADING____________ */
 h1 {
