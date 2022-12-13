@@ -11,16 +11,17 @@ html {
 body {
   max-width: 960px;
   width: 90%;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
-/* header {
-  background: rgb(255, 48, 48);
-  margin: 0 0 0 10px;
-  height: 80px;
-} */
+/* -------------- CV Title -------------- */
 
-/* ___________HEADING____________ */
+.CV_title {
+  background: rgb(255, 48, 48);
+  margin: 20px 0 10px 0;
+  height: 80px;
+}
+
 h1 {
   text-align: center;
   color: white;
@@ -28,7 +29,7 @@ h1 {
   margin: 0;
   text-shadow: 2px 2px 4px #000000, 20px 20px 1rem rgb(88, 0, 0);
 }
-/* _______________________________________ */
+/* ------------------------------------------- */
 
 section {
   display: flex;
@@ -38,7 +39,7 @@ section {
 
 article:first-child {
   padding: 10px;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
   background: rgb(65, 65, 65);
   flex: 1 100px;
 }
@@ -189,8 +190,6 @@ article:first-child a:active {
   font-weight: 700;
   text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
-
-/* Hina+Mincho */
 
 /* __________EXPERIENCE BOX____________ */
 
@@ -405,11 +404,6 @@ a {
 }
 
 /* --------------- Navbar with Dropdown ------------- */
-body {
-  max-width: 960px;
-  width: 90%;
-  margin: 20px auto;
-}
 
 .topnav {
   overflow: hidden;

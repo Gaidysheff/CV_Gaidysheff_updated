@@ -10,7 +10,40 @@
 
   <body>
     <header>
-      <h1>Curriculum Vitae</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="/home.html" class="active">Home</a>
+        <div class="navbar_dropdown">
+          <button class="dropbtn">
+            Education
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Resume_Gaidysheff\education-1.html"
+              >Saint-Petersburg State Marine Technical University</a
+            >
+            <a href="Resume_Gaidysheff\education-2.html"
+              >The Urals-Siberia Institute of Business</a
+            >
+            <a href="Resume_Gaidysheff\education-3.html">Training Cources</a>
+          </div>
+        </div>
+        <a href="Resume_Gaidysheff\assignments_st.html"
+          >Long-Term Assignments</a
+        >
+        <a href="Resume_Gaidysheff\assignments_st.html"
+          >Short-Term Assignments</a
+        >
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+      <div class="CV_title">
+        <h1>Curriculum Vitae</h1>
+      </div>
     </header>
     <section>
       <!-- __________________LEFT SIDE_______________________ -->
@@ -232,12 +265,12 @@
           </div>
           <div class="container right">
             <div class="content">
-              <h3>2014 - 2021</h3>
+              <h3>2014 - ...</h3>
               <a
                 class="position_in_company"
                 href="Resume_Gaidysheff\assignments.html"
               >
-                Commercial Director
+                Manager
                 <br /><br />
                 Optima Group (Ekaterinburg, Russia)
               </a>
@@ -245,7 +278,7 @@
           </div>
           <div class="container right">
             <div class="content">
-              <h3>2012 - 2021</h3>
+              <h3>2012 - 2022</h3>
               <a
                 class="position_in_company"
                 href="Resume_Gaidysheff\assignments.html"
@@ -430,6 +463,18 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+
+      // ---------------- Script for Navbar with Dropdown ----------------
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      // -------------------------------------------------------------------
     </script>
   </body>
 </html>

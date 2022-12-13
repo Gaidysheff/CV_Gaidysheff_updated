@@ -13,13 +13,10 @@ footer {
 
 .shadow {
   background: #f7f7f7;
-  /* Цвет фона */
+  margin-top: 30px;
   border: 1px solid #ccc;
-  /* Параметры рамки */
   padding: 20px;
-  /* Поля вокруг текста */
   position: relative;
-  /* Относительное позиционирование */
 }
 
 .shadow::before,
@@ -27,11 +24,8 @@ footer {
   content: "";
   /* Вывод тени */
   position: absolute;
-  /* Абсолютное позиционирование */
   bottom: 15px;
-  /* Положение снизу */
   left: 10px;
-  /* Положение слева */
   width: 50%;
   /* Ширина тени */
   max-width: 300px;
