@@ -8,47 +8,38 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style_for_short-terms.css" />
 
-
     <title>Short-Term Assignments</title>
 
     <style></style>
   </head>
   <body>
+    <!-- ------------------- Navbar with Dropdown ------------------------- -->
 
-
-
-  <!-- ------------------- Navbar with Dropdown ------------------------- -->
-
-  <div class="topnav" id="myTopnav">
-    <a href="/home.html" class="active">Home</a>
-    <div class="navbar_dropdown">
-      <button class="dropbtn">Education 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="education-1.html">Saint-Petersburg State Marine Technical University</a>
-        <a href="education-2.html">The Urals-Siberia Institute of Business</a>
-        <a href="education-3.html">Training Cources</a>
+    <div class="topnav" id="myTopnav">
+      <a href="/home.html" class="navbar_active">Home</a>
+      <div class="navbar_dropdown">
+        <button class="dropbtn">
+          Education
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="education-1.html"
+            >Saint-Petersburg State Marine Technical University</a
+          >
+          <a href="education-2.html">The Urals-Siberia Institute of Business</a>
+          <a href="education-3.html">Training Cources</a>
+        </div>
       </div>
-    </div> 
-    <a href="assignments.html">Long-Term Assignments</a>
-    <a href="assignments_st.html">Short-Term Assignments</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
+      <a href="assignments.html">Long-Term Assignments</a>
+      <a href="assignments_st.html">Short-Term Assignments</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
 
     <p>
       >Diploma “Suma Cum Laude”, <br />Master of Economy and Management of
@@ -79,9 +70,8 @@
       </div>
     </div>
     <script>
-  
       // ---------------- Script for Navbar with Dropdown ----------------
-      
+
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -91,7 +81,6 @@
         }
       }
       // -------------------------------------------------------------------
-      </script>
-
+    </script>
   </body>
 </html>

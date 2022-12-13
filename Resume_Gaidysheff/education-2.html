@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
 
-
     <style>
       .sign {
         display: flex;
@@ -18,41 +17,44 @@
       .sign > img {
         width: 500px;
       }
-
-
-
-
     </style>
   </head>
   <body>
+    <!-- ------------------- Navbar with Dropdown ------------------------- -->
 
-  <!-- ------------------- Navbar with Dropdown ------------------------- -->
-
-  <div class="topnav" id="myTopnav">
-    <a href="/home.html" class="active">Home</a>
-    <div class="navbar_dropdown">
-      <button class="dropbtn">Education 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="education-1.html">Saint-Petersburg State Marine Technical University</a>
-        <a href="education-2.html">The Urals-Siberia Institute of Business</a>
-        <a href="education-3.html">Training Cources</a>
+    <div class="topnav" id="myTopnav">
+      <a href="/home.html" class="navbar_active">Home</a>
+      <div class="navbar_dropdown">
+        <button class="dropbtn">
+          Education
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="education-1.html"
+            >Saint-Petersburg State Marine Technical University</a
+          >
+          <a href="education-2.html">The Urals-Siberia Institute of Business</a>
+          <a href="education-3.html">Training Cources</a>
+        </div>
       </div>
-    </div> 
-    <a href="assignments.html">Long-Term Assignments</a>
-    <a href="assignments_st.html">Short-Term Assignments</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+      <a href="assignments.html">Long-Term Assignments</a>
+      <a href="assignments_st.html">Short-Term Assignments</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
 
     <div class="sign">
       <img src="images\under construction-1.png" alt="" />
     </div>
 
     <script>
-
       // ---------------- Script for Navbar with Dropdown ----------------
-      
+
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -62,7 +64,6 @@
         }
       }
       // -------------------------------------------------------------------
-      </script>
-
+    </script>
   </body>
 </html>

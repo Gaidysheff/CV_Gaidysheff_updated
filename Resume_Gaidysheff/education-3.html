@@ -1,59 +1,198 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles.css" />
-<style>
-  
-  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .seminars {
+        /* height: 300px; */
+        display: flex;
+        direction: row;
+        background-color: #ffffff;
+        /* padding: 30px; */
+      }
+      .seminars_box {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid red;
+        width: 980px;
+        padding: 10px;
+        background-color: rgb(191, 225, 237);
+        box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
+      }
 
-</style>
-</head>
-<body>
+      .certificate_icon {
+        margin-top: 20px;
+        justify-self: center;
+        border: 1px solid brown;
+      }
 
-  <!-- ------------------- Navbar with Dropdown ------------------------- -->
+      .span2 {
+        grid-column: auto / span 2;
+      }
+      .span3 {
+        grid-column: auto / span 3;
+      }
+      .span4 {
+        grid-column: auto / span 4;
+      }
+      .span5 {
+        grid-column: auto / span 5;
+      }
+      .span6 {
+        grid-column: auto / span 6;
+      }
+      .span7 {
+        grid-column: auto / span 7;
+      }
+      .span8 {
+        grid-column: auto / span 8;
+      }
+      .span9 {
+        grid-column: auto / span 9;
+      }
+      .span10 {
+        grid-column: auto / span 10;
+      }
+      .span11 {
+        grid-column: auto / span 11;
+      }
+      .span12 {
+        grid-column: auto / span 12;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ------------------- Navbar with Dropdown ------------------------- -->
 
-<div class="topnav" id="myTopnav">
-  <a href="/home.html" class="active">Home</a>
-  <div class="navbar_dropdown">
-    <button class="dropbtn">Education 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="education-1.html">Saint-Petersburg State Marine Technical University</a>
-      <a href="education-2.html">The Urals-Siberia Institute of Business</a>
-      <a href="education-3.html">Training Cources</a>
+    <div class="topnav" id="myTopnav">
+      <a href="/home.html" class="navbar_active">Home</a>
+      <div class="navbar_dropdown">
+        <button class="dropbtn">
+          Education
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="education-1.html"
+            >Saint-Petersburg State Marine Technical University</a
+          >
+          <a href="education-2.html">The Urals-Siberia Institute of Business</a>
+          <a href="education-3.html">Training Cources</a>
+        </div>
+      </div>
+      <a href="assignments.html">Long-Term Assignments</a>
+      <a href="assignments_st.html">Short-Term Assignments</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
     </div>
-  </div> 
-  <a href="assignments.html">Long-Term Assignments</a>
-  <a href="assignments_st.html">Short-Term Assignments</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
 
+    <!-- ------------------------------------------------------------- -->
 
+    <div class="seminars">
+      <div class="seminars_box">
+        <div class="span4">Seminars where I was trained</div>
 
+        <div class="certificate_icon dropdown">
+          <img
+            src="images_education\Seminar-01_icon.jpg"
+            alt="diploma main"
+            width="80"
+            height="120"
+          />
+          <div class="dropdown-content">
+            <img
+              src="images_education/Seminar-01.jpg"
+              alt="diploma main"
+              width="545"
+              height="785"
+            />
+            <div class="desc">Certificate of Attendance</div>
+          </div>
+        </div>
 
+        <div class="certificate_icon dropdown">
+          <img
+            src="images_education\Seminar-01_icon.jpg"
+            alt="diploma main"
+            width="80"
+            height="120"
+          />
+          <div class="dropdown-content">
+            <img
+              src="images_education/Seminar-01.jpg"
+              alt="diploma main"
+              width="545"
+              height="785"
+            />
+            <div class="desc">Certificate of Attendance</div>
+          </div>
+        </div>
 
+        <div class="certificate_icon dropdown">
+          <img
+            src="images_education\Seminar-01_icon.jpg"
+            alt="diploma main"
+            width="80"
+            height="120"
+          />
+          <div class="dropdown-content">
+            <img
+              src="images_education/Seminar-01.jpg"
+              alt="diploma main"
+              width="545"
+              height="785"
+            />
+            <div class="desc">Certificate of Attendance</div>
+          </div>
+        </div>
 
+        <div class="certificate_icon dropdown">
+          <img
+            src="images_education\Seminar-01_icon.jpg"
+            alt="diploma main"
+            width="80"
+            height="120"
+          />
+          <div class="dropdown-content">
+            <img
+              src="images_education/Seminar-01.jpg"
+              alt="diploma main"
+              width="545"
+              height="785"
+            />
+            <div class="desc">Certificate of Attendance</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script>
+    <div class="seminars">
+      <div class="seminars_box">Seminars where I trained others</div>
+    </div>
 
-// ---------------- Script for Navbar with Dropdown ----------------
+    <script>
+      // ---------------- Script for Navbar with Dropdown ----------------
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-// -------------------------------------------------------------------
-</script>
-
-</body>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      // -------------------------------------------------------------------
+    </script>
+  </body>
 </html>
-
-
-

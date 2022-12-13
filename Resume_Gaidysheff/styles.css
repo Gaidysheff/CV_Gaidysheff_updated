@@ -420,7 +420,7 @@ a {
   font-size: 17px;
 }
 
-.active {
+.navbar_active {
   background-color: red;
   color: white;
 }
