@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&family=Rubik+Vinyl&display=swap');
 /* @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kiwi+Maru:wght@500&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Londrina+Outline&family=Londrina+Sketch&family=Neonderthaw&display=swap"); */
 
@@ -514,4 +515,114 @@ a {
     width: 100%;
     text-align: left;
   }
+}
+
+      /* -------------Education-3 section (Seminars)--------------------- */
+
+      .seminars {
+        /* height: 300px; */
+        display: flex;
+        direction: row;
+        background-color: #ffffff;
+        /* padding: 30px; */
+      }
+      .seminars_box {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid red;
+        width: 980px;
+        padding: 10px;
+        background-color: rgb(191, 225, 237);
+        box-shadow: 30px 20px 40px 5px rgb(195, 195, 195);
+      }
+
+      .certificate_icon {
+        margin-top: 20px;
+        justify-self: center;
+        border: 1px solid brown;
+      }
+
+      .span2 {
+        grid-column: auto / span 2;
+      }
+
+      .span3 {
+        grid-column: auto / span 3;
+      }
+
+      .span4 {
+        grid-column: auto / span 4;
+      }
+
+      .span5 { grid-column: auto / span 5;}
+      .span6 { grid-column: auto / span 6;}
+      .span7 { grid-column: auto / span 7;}
+      .span8 { grid-column: auto / span 8;}
+      .span9 { grid-column: auto / span 9;}
+      .span10 { grid-column: auto / span 10;}
+      .span11 { grid-column: auto / span 11;}
+      .span12 { grid-column: auto / span 12;}
+
+      .box_left {
+        justify-self: end;
+      }
+
+      .box_right {
+        justify-self: start;
+      }
+
+      /* ---------------------------------------------------- */
+
+.box_with_background-image {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  background-image: url('images_education/СПГМТУ-01.jpg');
+  margin: auto;
+}
+
+.heading_university {
+  /* font-weight: 500; */
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-family: "Rubik Marker Hatch", Arial;
+  /* color: rgb(85, 20, 20); */
+  /* text-shadow: 1px 1px 2px black, 0 0 1em red; */
+  text-shadow: 10px 10px 5px rgb(180, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+}
+
+.heading_faculty {
+  justify-self: center;
+  font-weight: 500;
+  font-size: 60px;
+  color: rgb(249, 249, 249);
+  font-family: "Pattaya", Times;
+  /* color: rgb(85, 20, 20); */
+  /* text-shadow: 1px 1px 2px black, 0 0 1em red; */
+  text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+}
+
+.heading_specialization {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-family: "Pattaya", Times;
+  /* color: rgb(85, 20, 20); */
+  /* text-shadow: 1px 1px 2px black, 0 0 1em red; */
+  text-shadow: 10px 10px 7px rgb(181, 0, 0), 0 0 1.5rem rgb(0, 0, 0);
+}
+
+.logo_box {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  background: rgb(150, 255, 153);
+}
+
+.click_on_image {
+  color: white;
+  font-size: 12px;
+  background-color: #920000;
+
 }
