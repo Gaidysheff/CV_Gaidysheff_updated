@@ -367,6 +367,27 @@ a {
     left: 0%;
   }
 }
+
+/* --------------------Skills------------------------ */
+
+.skill-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.python {
+  width: 15%;
+}
+
+.django {
+  width: 30%;
+}
+
+.trinity {
+  width: 25%;
+}
 /* _______________Footer____________________________ */
 
 .front_footer {
