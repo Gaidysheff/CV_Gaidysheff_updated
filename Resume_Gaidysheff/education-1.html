@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <title>Short-Term Assignments</title>
@@ -23,6 +28,84 @@
       .sign > img {
         margin-top: 100px;
         width: 500px;
+      }
+    </style>
+    <!-- Cube Slider -->
+    <style>
+      .swiper {
+        width: 300px;
+        height: 300px;
+        z-index: 0;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      .photo-slider {
+        display: grid;
+        grid-template-columns: 12;
+        grid-template-rows: 4;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .section-title-left {
+        grid-column: 1 / 7;
+        grid-row: 1;
+        text-align: center;
+        color: rgb(2, 0, 143);
+      }
+
+      .section-title-right {
+        grid-column: 7 / 13;
+        grid-row: 1;
+        text-align: center;
+        color: rgb(2, 0, 143);
+      }
+
+      .military {
+        grid-column: 1 / 7;
+        grid-row: 2;
+        justify-content: center;
+      }
+
+      .nord {
+        grid-column: 7 / 13;
+        grid-row: 2;
+      }
+      .military > .navy-logo {
+        width: 100%;
+      }
+
+      .nord > .vsso-logo {
+        width: 100%;
+      }
+      .left-slider {
+        grid-column: 1 / 7;
+        grid-row: 3;
+        margin-top: 20px;
+      }
+
+      .right-slider {
+        grid-column: 7 / 13;
+        grid-row: 3;
+        margin-top: 20px;
+      }
+
+      .note-for-slider {
+        grid-column: 1 / 13;
+        grid-row: 4;
+        margin-top: 30px;
+        justify-self: center;
+        color: grey;
+        font-style: italic;
       }
     </style>
   </head>
@@ -61,11 +144,29 @@
       <div class="span2 logo_box"></div>
       <div class="span8 heading_university tooltip">
         Leningrad Shipbuilding Institute
-        <span class="tooltiptext">The Leningrad Shipbuilding Institute (LKI) was created in 1930 by introducing a shipbuilding department from the Leningrad Polytechnic Institute. The new institute had about 200 students after its formation.</span>
+        <span class="tooltiptext"
+          >The Leningrad Shipbuilding Institute (LKI) was created in 1930 by
+          introducing a shipbuilding department from the Leningrad Polytechnic
+          Institute. The new institute had about 200 students after its
+          formation.</span
+        >
       </div>
       <div class="span8 heading_university tooltip">
         Saint-Petersburg State Marine Technical University
-        <span class="tooltiptext">Санкт-Петербу́ргский госуда́рственный морско́й техни́ческий университе́т (до 1990 года — Ленинградский ордена Ленина кораблестроительный институт (неофициально — Корабелка), в 1990—1992 годах — Ленинградский государственный морской технический университет) — высшее учебное заведение технического профиля в Санкт-Петербурге. Единственное в России учебное заведение, в котором на трёх основных факультетах готовят морских инженеров-специалистов мирового класса по проектированию, постройке и технической эксплуатации морских судов, боевых надводных кораблей и подводных лодок, оружия, судовых энергетических установок, приборов, технических средств обеспечения разведки и добычи нефти, газа и других полезных ископаемых на морском дне.</span>
+        <span class="tooltiptext"
+          >Санкт-Петербу́ргский госуда́рственный морско́й техни́ческий университе́т
+          (до 1990 года — Ленинградский ордена Ленина кораблестроительный
+          институт (неофициально — Корабелка), в 1990—1992 годах — Ленинградский
+          государственный морской технический университет) — высшее учебное
+          заведение технического профиля в Санкт-Петербурге. Единственное в
+          России учебное заведение, в котором на трёх основных факультетах
+          готовят морских инженеров-специалистов мирового класса по
+          проектированию, постройке и технической эксплуатации морских судов,
+          боевых надводных кораблей и подводных лодок, оружия, судовых
+          энергетических установок, приборов, технических средств обеспечения
+          разведки и добычи нефти, газа и других полезных ископаемых на морском
+          дне.</span
+        >
       </div>
       <div class="span12 heading_faculty">
         Faculty of Engineering and Economy
@@ -100,8 +201,111 @@
       <p></p>
     </div>
     <!-- --------------------------------------------------------- -->
+    <br /><br />
+    <div class="photo-slider">
+      <h2 class="section-title-left">
+        Course of Naval Education <br />
+        1990-1993
+      </h2>
+      <h2 class="section-title-right">
+        Student's Construction Team <br />
+        summers of 1989 and 1990
+      </h2>
 
-    <h2>PhotoSlider for Navy and Stroyotryad</h2>
+      <div class="military">
+        <img
+          class="navy-logo"
+          src="images_education\Navy-logo.jpg"
+          alt="Navy-logo"
+        />
+      </div>
+
+      <div class="nord">
+        <img
+          class="vsso-logo"
+          src="images_education\вссо-лого.jpg"
+          alt="VSSO-logo"
+        />
+      </div>
+      <!-- Swiper Cube Slider -->
+      <div class="left-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images_education\navy-01.jpg" alt="navy-01.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images_education\navy-04.jpg" alt="navy-04.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images_education\navy-02.jpg" alt="navy-02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images_education\navy-03.jpg" alt="navy-03.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Swiper Cube Slider -->
+      <div class="right-slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images_education\stroyotryad-01.jpg"
+                alt="stroyotryad-01.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images_education\stroyotryad-02.jpg"
+                alt="stroyotryad-02.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images_education\stroyotryad-03.jpg"
+                alt="stroyotryad-03.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images_education\stroyotryad-04.jpg"
+                alt="stroyotryad-04.jpg"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="note-for-slider">
+        ... using the left button of your mouse you can move the photo-sliders
+        to the left-and-right
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 
     <div class="sign">
       <img src="images/Page_Under_Construction.jpg" alt="" />

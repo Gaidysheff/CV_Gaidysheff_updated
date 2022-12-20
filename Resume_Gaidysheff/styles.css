@@ -668,14 +668,14 @@ a {
   max-width: 500px;
   background-color: black;
   color: #fff;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
   text-align: start;
   border-radius: 6px;
   padding: 10px 10px 10px 10px;
 
   /* Position the tooltip */
-    position: absolute;
+  position: absolute;
   z-index: 1;
   top: 100%;
   left: 50%;
@@ -700,14 +700,14 @@ a {
   max-width: 500px;
   background-color: rgb(255, 0, 0);
   color: #fff;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
   text-align: center;
   border-radius: 6px;
   padding: 10px 10px 10px 10px;
 
   /* Position the tooltip */
-    position: absolute;
+  position: absolute;
   z-index: 1;
   bottom: 100%;
   left: 50%;
